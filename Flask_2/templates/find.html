@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Calculate{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+<h1>Calculate</h1>
+{% if name %}
+<h2>{{num}} is {{ name }}</h2>
+{% else %}
+<h2>No number provided </h2>
+{% endif %}
+<a href="/">HOME</a>
+{% endblock %}
